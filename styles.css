@@ -126,6 +126,14 @@ body {
     -o-transform: scale(140%);
 }
 
+.container a{
+    text-decoration: none;
+    color : white;
+    position: absolute;
+    bottom : 15px;
+}
+
+
 
 /*SECOND PAGE*/
 .secondPage{
@@ -261,4 +269,66 @@ body {
 .projectBox ul a:hover{
     text-decoration: underline;
     color: grey;
+}
+
+/*FOURTH PAGE*/
+
+.fourthPage{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    background-image: linear-gradient(136deg ,#533a6e,#2F0743);
+    background-size: 400% 400%;
+    animation: headingAnimation 10s ease infinite;
+    -webkit-animation: headingAnimation 10s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+
+
+
+.contactMe{
+    font-size: 50px;    
+}
+
+.contactName,.email,.message,.submit{
+    width: 550px;
+    height: 50px;
+    border-radius: 7px ;
+    -webkit-border-radius: 7px ;
+    -moz-border-radius: 7px ;
+    -ms-border-radius: 7px ;
+    -o-border-radius: 7px ;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.message{
+    height : 95px;
+}
+.submit{
+    background-color: rgb(66, 172, 66);
+    border: none;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.submit:hover{
+    background-color: rgb(51, 244, 51);
+    transform: scale(105%);
+    -webkit-transform: scale(105%);
+    -moz-transform: scale(105%);
+    -ms-transform: scale(105%);
+    -o-transform: scale(105%);
 }
