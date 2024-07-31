@@ -354,3 +354,182 @@ html {
     -ms-transform: scale(105%);
     -o-transform: scale(105%);
 }
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1200px) {
+    .navbar ul li a {
+        font-size: 16px;
+    }
+    
+    .navbar ul li a:hover {
+        font-size: 20px;
+    }
+    
+    .mainTitle {
+        font-size: 50px;
+    }
+
+    .intro {
+        font-size: 30px;
+    }
+
+    .name {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 5px 0;
+    }
+
+    .paragraphBox {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .boxOne, .boxTwo {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .boxTwo {
+        border-left: none;
+        border-top: 1px white solid;
+    }
+
+    .contactName, .email, .message, .submit {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar ul li a {
+        font-size: 14px;
+    }
+    
+    .navbar ul li a:hover {
+        font-size: 18px;
+    }
+    
+    .mainTitle {
+        font-size: 40px;
+    }
+
+    .intro {
+        font-size: 25px;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+
+    .aboutMe, .projects, .contactMe {
+        font-size: 40px;
+    }
+
+    .projectBox {
+        width: 95%;
+        margin-bottom: 15px;
+    }
+
+    .projectBox ul li {
+        font-size: 14px;
+    }
+
+    .projectBox ul span {
+        font-size: 25px;
+    }
+
+    .projectBox ul a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar ul li a {
+        font-size: 12px;
+    }
+    
+    .navbar ul li a:hover {
+        font-size: 16px;
+    }
+    
+    .mainTitle {
+        font-size: 30px;
+    }
+
+    .intro {
+        font-size: 20px;
+    }
+
+    .name {
+        font-size: 30px;
+    }
+
+    .aboutMe, .projects, .contactMe {
+        font-size: 30px;
+    }
+
+    .projectBox ul li {
+        font-size: 12px;
+    }
+
+    .projectBox ul span {
+        font-size: 20px;
+    }
+
+    .projectBox ul a {
+        font-size: 12px;
+    }
+
+    .contactName, .email, .message, .submit {
+        width: 90%;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 3px 0;
+    }
+    
+    .mainTitle {
+        font-size: 25px;
+    }
+
+    .intro {
+        font-size: 18px;
+    }
+
+    .name {
+        font-size: 25px;
+    }
+
+    .aboutMe, .projects, .contactMe {
+        font-size: 25px;
+    }
+
+    .projectBox ul li {
+        font-size: 10px;
+    }
+
+    .projectBox ul span {
+        font-size: 18px;
+    }
+
+    .projectBox ul a {
+        font-size: 10px;
+    }
+}
