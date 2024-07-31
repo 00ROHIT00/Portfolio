@@ -3,13 +3,35 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    /* user-select: none; */
+    user-select: none;
     scrollbar-width: none;
     scroll-behavior: smooth;
 }
+html, body {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll; 
+    height: 100%;
+}
 
-body {
-    overflow-x: hidden;
+section {
+    scroll-snap-align: start; 
+    height: 100vh; 
+}
+
+
+html {
+    scroll-behavior: smooth;
+}   
+#home {
+    position: relative; 
+}
+
+#home .fa-circle-chevron-down {
+    position: absolute;
+    bottom: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
 .navbar {
