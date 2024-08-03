@@ -453,19 +453,3 @@ input{
     -ms-transform: scale(102%);
     -o-transform: scale(102%);
 }
-
-
-
-@media (max-width: 375px){
-    /*NAV BAR*/
-    .navbar ul li a {
-        font-size: 10px;
-        color : red;
-    }
-
-    .navbar ul li a:hover {
-        font-size: 12px;
-    }
-    /*SECOND PAGE*/
-    
-}
