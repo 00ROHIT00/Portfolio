@@ -460,6 +460,7 @@ input{
     /*NAV BAR*/
     .navbar ul li a {
         font-size: 10px;
+        color : red;
     }
 
     .navbar ul li a:hover {
