@@ -1,3 +1,13 @@
+:root{
+    --lightMode : linear-gradient(136deg ,#7a6592,#2F0743);
+    --lightModeAccent : white;
+    --input: white;
+    --textColor : black;
+    --submitColor : rgb(66, 172, 66);
+    --submitHover: rgb(51, 244, 51);
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +16,14 @@
     user-select: none;
     scrollbar-width: none;
     scroll-behavior: smooth;
+    -webkit-scroll-behaviour : smooth;
 }
 html, body {
     scroll-snap-type: y mandatory;
     overflow-y: scroll; 
     height: 100%;
+    scroll-behavior: smooth;
+    -webkit-scroll-behaviour : smooth;
 }
 
 section {
@@ -55,7 +68,7 @@ html {
 
 .navbar ul li a {
     text-decoration: none;
-    color: white;
+    color: var(--lightModeAccent);
     font-size: 18px;
     font-weight: 500;
     transition:0.3s ease-in-out;
@@ -69,11 +82,22 @@ html {
     font-size: 25px;
 }
 
+#darkMode{
+    color: var(--lightModeAccent);
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+#darkMode:hover {
+    font-size: 25px;
+}
 .container {
     height: 100vh;
     width: 100%;
-    color: white;
-    background-image: linear-gradient(136deg ,#7a6592,#2F0743);
+    color: var(--lightModeAccent);
+    background-image: var(--lightMode);
     background-size: 400% 400%;
     animation: headingAnimation 10s ease infinite;
     -webkit-animation: headingAnimation 10s ease infinite;
@@ -150,7 +174,7 @@ html {
 
 .anchorDown{
     text-decoration: none;
-    color : white;
+    color :  var(--lightModeAccent);
     position: absolute;
     bottom : 15px;
 }
@@ -170,7 +194,7 @@ html {
 
 .icons a{
     text-decoration: none;
-    color : white;
+    color:  var(--lightModeAccent);
 }
 
 .icons i:hover{
@@ -186,8 +210,8 @@ html {
 .secondPage{
     height: 100vh;
     width: 100%;
-    color: white;
-    background-image: linear-gradient(136deg ,#7a6592,#2F0743);
+    color:  var(--lightModeAccent);
+    background-image: var(--lightMode);
     background-size: 400% 400%;
     animation: headingAnimation 10s ease infinite;
     -webkit-animation: headingAnimation 10s ease infinite;
@@ -230,7 +254,7 @@ html {
     font-size: 25px;
 }
 .boxTwo{
-    border-left: 1px white solid;
+    border-left: 1px   var(--lightModeAccent) solid;
     padding-left: 20px;
 }
  /*THIRD PAGE*/
@@ -238,8 +262,8 @@ html {
  .thirdPage{
     height: 100vh;
     width: 100%;
-    color: white;
-    background-image: linear-gradient(136deg ,#7a6592,#2F0743);
+    color:  var(--lightModeAccent);
+    background-image: var(--lightMode);
     background-size: 400% 400%;
     animation: headingAnimation 10s ease infinite;
     -webkit-animation: headingAnimation 10s ease infinite;
@@ -278,7 +302,7 @@ html {
 }
 
 .projectBox:hover{
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.4);
     transform: scale(105%);
     -webkit-transform: scale(105%);
     -moz-transform: scale(105%);
@@ -306,7 +330,7 @@ html {
 
 
  .projectBox ul a{
-    color: white;
+    color:  var(--lightModeAccent);
     text-decoration: none;
     font-weight: 700;
     display: flex;
@@ -328,8 +352,8 @@ html {
 .fourthPage{
     height: 100vh;
     width: 100%;
-    color: white;
-    background-image: linear-gradient(136deg ,#7a6592,#2F0743);
+    color:  var(--lightModeAccent);
+    background-image: var(--lightMode);
     background-size: 400% 400%;
     animation: headingAnimation 10s ease infinite;
     -webkit-animation: headingAnimation 10s ease infinite;
@@ -344,6 +368,7 @@ html {
 .contactMe{
     font-size: 50px;    
 }
+
 
 .contactName,.email,.message,.submit{
     width: 550px;
@@ -361,13 +386,17 @@ html {
     -moz-transition: 0.3s ease-in-out;
     -ms-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
+    background-color: white;
+    border : 1px solid white;
+    background-color: var(--input);
+    color : var(--textColor);
 }
 
 .message{
     height : 95px;
 }
 .submit{
-    background-color: rgb(66, 172, 66);
+    background-color:var(--submitColor) ;
     border: none;
     transition: 0.3s ease-in-out;
     -webkit-transition: 0.3s ease-in-out;
@@ -375,18 +404,22 @@ html {
     -ms-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
     font-size: 20px;
-    color : black;
+    color : var(--textColor);
     cursor: pointer;
 }
 
 .submit:hover{
-    background-color: rgb(51, 244, 51);
+    background-color: var(--submitHover);
     transform: scale(105%);
     -webkit-transform: scale(105%);
     -moz-transform: scale(105%);
     -ms-transform: scale(105%);
     -o-transform: scale(105%);
     font-weight: 600;
+}
+
+textarea{
+    outline : none;
 }
 input{
     outline : none;
@@ -397,8 +430,8 @@ input{
 .blogpage{
     height: 100vh;
     width: 100%;
-    color: white;
-    background-image: linear-gradient(136deg ,#7a6592,#2F0743);
+    color:  var(--lightModeAccent);
+    background-image: var(--lightMode);
     background-size: 400% 400%;
     animation: headingAnimation 10s ease infinite;
     -webkit-animation: headingAnimation 10s ease infinite;
@@ -452,4 +485,14 @@ input{
     -moz-transform: scale(102%);
     -ms-transform: scale(102%);
     -o-transform: scale(102%);
+}
+
+
+.darkTheme{
+    --lightMode : linear-gradient(136deg ,#16222A,#3A6073);
+    --lightModeAccent : black;
+    --input: transparent;
+    --textColor : white;
+    --submitColor : rgba(0,0,0,0.3);
+    --submitHover: black;
 }

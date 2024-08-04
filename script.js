@@ -37,3 +37,29 @@ form.addEventListener('submit', function(e) {
         });
 });
 
+/*SMOOTH SCROLLING FOR CHROME*/
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+/*DARK MODE TOGGLE*/
+
+var button = document.getElementById('darkMode');
+
+button.onclick = function() {
+    document.body.classList.toggle("darkTheme");
+    if (document.body.classList.contains("darkTheme")) {
+        button.classList.remove("fa-moon");
+        button.classList.add("fa-sun");
+    } else {
+        button.classList.remove("fa-sun");
+        button.classList.add("fa-moon");
+    }
+    
+}
